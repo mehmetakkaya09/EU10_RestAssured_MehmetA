@@ -6,6 +6,6 @@ import static io.restassured.RestAssured.baseURI;
 public abstract class CydeoApiTestBase {
     @BeforeAll
     public static void setup() {
-        baseURI = ConfigReader.getProperty("cydeo");
+        baseURI = ConfigurationReader.getProperty("cydeo");
     }
 }

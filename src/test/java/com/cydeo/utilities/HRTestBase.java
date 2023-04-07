@@ -8,7 +8,7 @@ public abstract class HRTestBase {
 
     @BeforeAll
     public static void init() {
-        baseURI = ConfigReader.getProperty("hrdb");
+        baseURI = ConfigurationReader.getProperty("hrdb");
     }
 
 
