@@ -10,7 +10,8 @@ import java.util.Map;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.*;
-public class TestSpartanDBAndApi extends SpartanTestBase {
+public class
+TestSpartanDBAndApi extends SpartanTestBase {
 
     @Test
     public void testSpartan() {

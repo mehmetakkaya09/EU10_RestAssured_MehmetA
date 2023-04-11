@@ -5,16 +5,19 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
-@JsonIgnoreProperties(value = "id", allowSetters = true)
-public class Spartan {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Employees {
 
-    private int id;
-    private String name;
-    private String gender;
-    private long phone;
+    private List<Employee> items;
+    private int count;
+    private List<Links> links;
+
+
 
 
 }

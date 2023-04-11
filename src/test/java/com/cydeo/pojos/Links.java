@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class RegionsLinks {
+public class Links {
     private String rel;
     private String href;
 

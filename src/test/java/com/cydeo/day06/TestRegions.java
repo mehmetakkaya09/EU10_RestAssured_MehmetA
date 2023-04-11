@@ -1,7 +1,7 @@
 package com.cydeo.day06;
 import com.cydeo.pojos.Region;
 import com.cydeo.pojos.Regions;
-import com.cydeo.pojos.RegionsLinks;
+import com.cydeo.pojos.Links;
 import com.cydeo.utilities.HRTestBase;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ public class TestRegions extends HRTestBase {
         System.out.println(first);
 
         System.out.println(first.getLinks().get(0).getHref());
-        RegionsLinks links = first.getLinks().get(0);
+        Links links = first.getLinks().get(0);
         System.out.println(links.getHref());
     }
 
@@ -37,6 +37,7 @@ public class TestRegions extends HRTestBase {
         System.out.println(regions.getCount());
 
         System.out.println(regions.getItems().get(2).getRegion_name());
+        System.out.println(regions.getItems().get(1).getRId());
 
 
     }
