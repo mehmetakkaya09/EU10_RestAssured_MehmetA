@@ -40,7 +40,7 @@ public class TestPutAndPatchRequestSpartan extends SpartanTestBase {
         spartanPut.setPhone(Long.parseLong(UtilOfSpartan.fakeSpartan().get("phone").toString()));
         spartanPut.setGender(UtilOfSpartan.fakeSpartan().get("gender").toString());
         spartanPut.setId(spartanId);
-        given().accept(ContentType.JSON)
+        given()
                 .contentType(ContentType.JSON)
                 .body(spartanPut)
                 .pathParam("id", spartanId)
@@ -53,7 +53,7 @@ public class TestPutAndPatchRequestSpartan extends SpartanTestBase {
         assertThat(spartanPut.getGender(), equalTo(spartanTestPut.getGender()));
 
         String patchBody = "{\"name\": \"ComoLokko\"}";
-        given().accept(ContentType.JSON)
+        given()
                 .contentType(ContentType.JSON)
                 .body(patchBody)
                 .pathParam("id", spartanId)
